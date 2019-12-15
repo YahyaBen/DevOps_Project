@@ -3,10 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="<%=request.getContextPath()%>/style.css" type="text/css">
+<jsp:useBean id="uUser" class="beans.user" scope="request"></jsp:useBean>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Erreur</title>
 </head>
 <body>
-
 </body>
 </html>
