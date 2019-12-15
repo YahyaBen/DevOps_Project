@@ -12,7 +12,7 @@
   </servlet>
   <servlet-mapping>
   	<servlet-name>Login</servlet-name>
-  	<url-pattern>/Login</url-pattern>
+  	<url-pattern>/Logins</url-pattern>
   </servlet-mapping>
   
 </web-app>
