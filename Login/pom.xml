@@ -12,6 +12,14 @@
   <name>Login Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
+  
+  <repositories>
+		<repository>
+			<id>captcha</id>
+			<name>BotDetect Captcha Repository</name>
+			<url>https://git.captcha.com/botdetect-java-captcha.git/blob_plain/HEAD:/</url>
+		</repository>
+	</repositories>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -20,6 +28,11 @@
   </properties>
 
   <dependencies>
+  <dependency>
+			<groupId>com.captcha</groupId>
+			<artifactId>botdetect-jsp20</artifactId>
+			<version>4.0.beta3.7</version>
+		</dependency>
   <dependency>
     <groupId>javax.servlet</groupId>
     <artifactId>javax.servlet-api</artifactId>
