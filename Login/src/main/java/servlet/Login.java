@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.captcha.botdetect.web.servlet.Captcha;
 
 import beans.user;
 
@@ -35,14 +36,16 @@ public class Login extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+		// Creation d'un objet Captcha pour appiquer les methodes de validation
+		Captcha captcha = Captcha.load(request, "exampleCaptchaTag");
+		boolean isHuman = captcha.validate(request.getParameter("captchaCode"));
 		// Ajout des utilisateur pour verifier avec formulaire
 		ajoutUser(request, response);
 		try {
 			// Verification de Login et mot de passe ainsi Le captcha !
 			String A = request.getParameter("pseudo");
 			String B = request.getParameter("password");
-			if (userVerif(A, B) == true  ) {
+			if (userVerif(A, B) == true && isHuman == true) {
 				// Renvoie vers la page d'affichage
 				this.getServletContext().getRequestDispatcher("/afficher.jsp").forward(request, response);
 			} else
