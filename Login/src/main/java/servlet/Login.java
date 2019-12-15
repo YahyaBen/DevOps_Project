@@ -37,8 +37,8 @@ public class Login extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// Creation d'un objet Captcha pour appiquer les methodes de validation
-		Captcha captcha = Captcha.load(request, "exampleCaptchaTag");
-		boolean isHuman = captcha.validate(request.getParameter("captchaCode"));
+		Captcha captcha = Captcha.load(request, "TagDuCaptcha");
+		boolean isHuman = captcha.validate(request.getParameter("CodeDuCaptcha"));
 		// Ajout des utilisateur pour verifier avec formulaire
 		ajoutUser(request, response);
 		try {

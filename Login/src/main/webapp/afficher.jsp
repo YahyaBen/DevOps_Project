@@ -11,7 +11,7 @@
 <body>
 <div id="DIV">
 <h1 id="Green">Connection Validée !!</h1> 
-Hello Mr. <h1 id="Orange"><jsp:getProperty name="uUser" property="nom" /></h1><br>
+Hello Mr. <a id="Orange"><jsp:getProperty name="uUser" property="nom" /></a><br>
 </div>
 </body>
 </html>

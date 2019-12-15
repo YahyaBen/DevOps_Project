@@ -16,8 +16,8 @@
 		<div id="DIV">
 			<label for="Nom">Pseudo *</label> <input type="text" name="pseudo" required><br><br> 
 			<label for="Prenom">Password </label> <input type="password" name="password"><br><br>
-			<botDetect:captcha id="exampleCaptchaTag" userInputID="captchaCode" /><br>
-			<input id="captchaCode" type="text" name="captchaCode" /><br><br>
+			<botDetect:captcha id="TagDuCaptcha" userInputID="CodeDuCaptcha" /><br>
+			<input id="CodeDuCaptcha" type="text" name="CodeDuCaptcha" /><br><br>
 			<button type="submit" value="Envoyer">Envoyer</button>
 			<button type="reset" value="Reset">Reset</button>
 		</div>
