@@ -4,6 +4,7 @@
 <html>
 <head>
 <jsp:useBean id="uUser" class="beans.user" scope="request"></jsp:useBean>
+<link rel="stylesheet" href="<%=request.getContextPath()%>/style.css" />
 <meta charset="ISO-8859-1">
 <title>Connection </title>
 </head>

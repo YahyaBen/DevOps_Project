@@ -1,0 +1,43 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: white;
+}
+
+h1 {
+	 font-size: 1em;
+	color: orange;
+	text-align: left;
+}
+
+p {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+
+}
+
+#Orange  {
+
+	color: orange;
+}
+#Green  {
+
+	color: green;
+}
+#Red  {
+
+	color: red;
+}
+#DIV{
+  border-style: groove;
+  border-color: orange;
+  padding : 30px;
+}
+
+#Cap{
+	display: block;
+	width: 200px;
+	float: left;
+}
+
+

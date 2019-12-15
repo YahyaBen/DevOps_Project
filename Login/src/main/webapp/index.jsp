@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="<%=request.getContextPath()%>/style.css" type="text/css">
 <title>DevOps</title>
 </head>
 <body>
