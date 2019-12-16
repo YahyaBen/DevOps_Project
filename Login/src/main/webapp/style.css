@@ -4,10 +4,32 @@ body {
 	background-color: white;
 }
 
+
 h1 {
 	 font-size: 1em;
-	color: orange;
+	color:  #ff0080;
 	text-align: left;
+}
+label {
+  color: #0080ff;
+  padding: 9px;
+  
+ 
+}
+button {
+  background-color: #ff8080;
+  color: #ffffff;
+  padding: 14px 20px;
+  margin: 5x 0;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+   font-family: Times New Roman;
+   
+}
+button:hover {
+  background-color: #0080ff;
+  color: white;
 }
 
 p {
@@ -30,7 +52,7 @@ p {
 }
 #DIV{
   border-style: groove;
-  border-color: orange;
+  border-color: #008040;
   padding : 30px;
 }
 

@@ -18,8 +18,8 @@
 			<label for="Prenom">Password </label> <input type="password" name="password"><br><br>
 			<botDetect:captcha id="TagDuCaptcha" userInputID="CodeDuCaptcha" /><br>
 			<input id="CodeDuCaptcha" type="text" name="CodeDuCaptcha" /><br><br>
-			<button type="submit" value="Envoyer">Envoyer</button>
-			<button type="reset" value="Reset">Reset</button>
+			<button  type="submit" value="Envoyer">Envoyer</button>
+			<button  type="reset" value="Reset">Reset</button>
 		</div>
 	</form>
 </body>
