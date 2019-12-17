@@ -1,65 +1,76 @@
-@charset "ISO-8859-1";
 
 body {
-	background-color: white;
+    font-family: "Lato", sans-serif;
 }
 
 
-h1 {
-	 font-size: 1em;
-	color:  #ff0080;
-	text-align: left;
-}
-label {
-  color: #0080ff;
-  padding: 9px;
-  
- 
-}
-button {
-  background-color: #ff8080;
-  color: #ffffff;
-  padding: 14px 20px;
-  margin: 5x 0;
-  border: none;
-  cursor: pointer;
-  width: 15%;
-   font-family: Times New Roman;
+
+.main-head{
+    height: 150px;
+    background: #FFF;
    
 }
-button:hover {
-  background-color: #0080ff;
-  color: white;
-}
 
-p {
-	font-family: "Times New Roman", Times, serif;
-	font-size: 20px;
-
-}
-
-#Orange  {
-
-	color: orange;
-}
-#Green  {
-
-	color: green;
-}
-#Red  {
-
-	color: red;
-}
-#DIV{
-  border-style: groove;
-  border-color: #008040;
-  padding : 30px;
-}
-
-#Cap{
-	display: block;
-	width: 200px;
-	float: left;
+.sidenav {
+    height: 100%;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
 
 
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 80%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: #000 !important;
+    color: #fff;
+}

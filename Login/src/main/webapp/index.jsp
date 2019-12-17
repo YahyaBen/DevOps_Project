@@ -6,21 +6,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="<%=request.getContextPath()%>/style.css"
-	type="text/css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="<%=request.getContextPath()%>/style.css" type="text/css">
+<meta charset="ISO-8859-1">
 <title>DevOps</title>
 </head>
 <body>
-	<h1>Informations client</h1>
-	<form action="Login" method="post">
-		<div id="DIV">
-			<label for="Nom">Pseudo *</label> <input type="text" name="pseudo" required><br><br> 
-			<label for="Prenom">Password </label> <input type="password" name="password"><br><br>
-			<botDetect:captcha id="TagDuCaptcha" userInputID="CodeDuCaptcha" /><br>
-			<input id="CodeDuCaptcha" type="text" name="CodeDuCaptcha" /><br><br>
-			<button  type="submit" value="Envoyer">Envoyer</button>
-			<button  type="reset" value="Reset">Reset</button>
-		</div>
-	</form>
+<div class="sidenav">
+         <div class="login-main-text">
+            <h2> DevOps</h2>
+            <p>EHEI</p>   
+         </div>
+      </div>
+      <div class="main">
+         <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+               <form action="Login" method="post">
+                  <div class="form-group">
+                     <label>Utilisateur</label>
+                     <input type="text" class="form-control" placeholder="Nom" name="pseudo" required>
+                  </div>
+                  <div class="form-group">
+                     <label>Mot de passe </label>
+                     <input type="password" class="form-control" placeholder="Password" name="password">
+                  </div>
+                  <botDetect:captcha id="TagDuCaptcha" userInputID="CodeDuCaptcha" /><br>
+				  <input class="form-control"  id="CodeDuCaptcha" type="text" name="CodeDuCaptcha" /><br><br>
+                  <button type="submit" value="Login" class="btn btn-black">Envoyer</button>
+                  <button  type="reset" value="Reset" class="btn btn-black">Reset</button>
+               </form>
+            </div>
+         </div>
+      </div>
 </body>
 </html>
