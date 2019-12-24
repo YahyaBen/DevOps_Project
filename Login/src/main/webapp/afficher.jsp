@@ -28,6 +28,11 @@
 						<strong>Bonjour Mr. <jsp:getProperty name="uUser" property="nom" /><br>
 						</strong>
 					</div>
+					<div class="alert alert-primary">
+						<a href="<%=request.getContextPath()%>/index.jsp" type="text/css">
+							<strong> Login a nouveau  ! </strong>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
