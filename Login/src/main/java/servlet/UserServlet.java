@@ -55,10 +55,8 @@ public class UserServlet extends HttpServlet {
 		try {
 			Registre.registerEmployee(C);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 		response.sendRedirect("index.jsp");
 	}
 }
