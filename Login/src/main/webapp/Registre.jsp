@@ -15,24 +15,21 @@
 <body>
 	<div class="sidenav">
 		<div class="login-main-text">
-			<h2>DevOps</h2>
+			<h2>Registre Compte</h2>
 			<p>EHEI</p>
 		</div>
 	</div>
 	<div class="main">
 		<div class="col-md-6 col-sm-12">
-			<form action="Login" method="post">
+			<form action="UserServlet" method="post">
 				<div class="login-form">
-					<label>Utilisateur</label> <input type="text" class="form-control" placeholder="Nom" name="pseudo" required>
+					<label>Nom Utilisateur</label> <input type="text" class="form-control" placeholder="Nom" name="Nom" required>
 				</div>
 				<div class="form-group">
-					<label>Mot de passe </label> <input type="password" class="form-control" placeholder="Password" name="password">
+					<label>Mot de passe </label> <input type="password" class="form-control" placeholder="Password" name="Password">
 				</div>
-				<botDetect:captcha id="TagDuCaptcha" userInputID="CodeDuCaptcha" />
-				<input class="form-control"  id="CodeDuCaptcha" type="text" name="CodeDuCaptcha" /><br>
-				<button type="submit" value="Login" class="btn btn-black">Envoyer</button>
-				<button type="reset" value="Reset" class="btn btn-black">Reset</button><br>
-				<a href="<%=request.getContextPath()%>/Registre.jsp" type="text/css"><strong> Registre ! </strong></a>
+				<button type="submit" value="Login" class="btn btn-black">Registre</button>
+				<button type="reset" value="Reset" class="btn btn-black">Reset</button>
 			</form>
 		</div>
 	</div>
